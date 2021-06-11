@@ -12,7 +12,30 @@
     <title>Tango</title>
 </head>
 <body>
-    
+        <header>
+            
+    <nav class="nav-extended #212121 grey darken-4">
+        <!--top navbar-->
+        <div class="nav-wrapper">
+        <a href="#!" class="brand-logo">Menu</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
+        <ul class="right hide-on-med-and-down">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Register</a></li>
+        </ul>
+        </div>
+    </nav>
+        <!--mobile navbar-->
+    <ul class="sidenav" id="mobile-demo">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Register</a></li>
+    </ul>
+
+    </header>
     <h1>Tango test 1</h1>
     {% block content%}
     {% endblock %}
