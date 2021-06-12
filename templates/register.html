@@ -2,36 +2,40 @@
 {% extends "base.html" %}
 {% block content %}
 
+    <h4 class="center-align"> Registration Form </h4>
 
   <div class="row">
-      <form class="col s12">
+      <form class="col s12" method="POST" action="{{ url_for('register') }}">
           <div class="row">
+               <!-- username -->
               <div class="input-field col s12 m4 offset-m4">
-                  <input placeholder="Placeholder" id="first_name" type="text" class="validate">
-                  <label for="first_name">First Name</label>
-              </div>
-              <div class="input-field col s12 m4 offset-m4">
-                  <input id="last_name" type="text" class="validate">
-                  <label for="last_name">Last Name</label>
+                  <input id="username" name="username" type="text" pattern="^[a-zA-Z0-9]{5,15}$"  class="validate" minlength="5" required>
+                  <label for="username">Username</label>
               </div>
           </div>
           <div class="row">
+               <!-- Password -->
               <div class="input-field col s12 m4 offset-m4">
-                  <input id="password" type="password" class="validate">
+                  <input id="password" name="password" type="password" class="validate" minlength="5" required>
                   <label for="password">Password</label>
               </div>
           </div>
           <div class="row">
+               <!-- Email -->
               <div class="input-field col s12 m4 offset-m4">
-                  <input id="email" type="email" class="validate">
+                  <input id="email" name="email" type="email" class="validate" pattern="[^ @]*@[^ @]*" required>
                   <label for="email">Email</label>
               </div>
           </div>
+                          <!-- register -->
+                <div class="row">
+                    <button type="submit" class="col s12 m4 offset-m4 btn-large">
+                        Register
+                    </button>
+                </div>
+
       </form>
 
-      <button class="btn waves-effect waves-light" id="btn" type="submit" name="action">Submit
-          <i class="material-icons"></i>
-      </button>
-  </div>
+
 
 {% endblock %}

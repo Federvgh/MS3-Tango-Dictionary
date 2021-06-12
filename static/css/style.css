@@ -3,6 +3,7 @@ h4{
     margin-bottom: 50px;
 }
 
-#btn {
-margin-left: 730px;
+.alert h5{
+    color: rgb(0, 88, 91);
+    line-height: 2;
 }
