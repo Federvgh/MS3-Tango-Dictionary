@@ -22,7 +22,7 @@
         <ul class="right hide-on-med-and-down">
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
-            <li><a href="#">Login</a></li>
+            <li><a href="{{ url_for('login') }}">Login</a></li>
             <li><a href="{{ url_for('register') }}">Register</a></li>
         </ul>
         </div>
@@ -31,8 +31,8 @@
     <ul class="sidenav" id="mobile-demo">
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
-            <li><a href="#">Login</a></li>
-            <li><a href='register'>Register</a></li>
+            <li><a href="{{ url_for('login') }}">Login</a></li>
+            <li><a href="{{ url_for('register') }}">Register</a></li>
     </ul>
 
         <div class="container-fluid">

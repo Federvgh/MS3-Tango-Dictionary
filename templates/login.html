@@ -5,7 +5,7 @@
     <h4 class="center-align"> Registration Form </h4>
 
   <div class="row">
-      <form class="col s12" method="POST" action="{{ url_for('register') }}">
+      <form class="col s12" method="POST" action="{{ url_for('login') }}">
           <div class="row">
                <!-- username -->
               <div class="input-field col s12 m4 offset-m4">
@@ -27,20 +27,22 @@
                   <label for="email">Email</label>
               </div>
           </div>
-                          <!-- register -->
+                          <!-- Login -->
                 <div class="row">
                     <button type="submit" class="col s12 m4 offset-m4 btn-large">
-                        Register
+                        Login
                     </button>
                 </div>
 
       </form>
 
-            <div class="row">
+  </div>
+
+      <div class="row">
         <div class="col s12">
             <p class="center-align">
-                Already registered?
-                <a href="{{ url_for('login') }}">Log in</a>
+                New Here?
+                <a href="{{ url_for('register') }}">Register Account</a>
             </p>
         </div>
     </div>
