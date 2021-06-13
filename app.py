@@ -28,7 +28,7 @@ def get_base():
 @app.route("/")
 @app.route("/get_categories")
 def categories():
-    categories = mongo.db.categories.find()
+    categories = list(mongo.db.categories.find())
     return render_template("categories.html", categories=categories)
 
 

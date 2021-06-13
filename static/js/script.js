@@ -3,8 +3,6 @@
     $('.sidenav').sidenav();
   });
 
-  $('.dropdown-trigger').dropdown();
-  
-       
-  
-      
+  $(document).ready(function(){
+    $('.collapsible').collapsible();
+  });
