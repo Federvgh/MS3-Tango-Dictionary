@@ -109,7 +109,8 @@ def logout():
 
 @app.route("/add_word")
 def add_word():
-    return render_template("add_word.html")
+    categories = mongo.db.categories.find().sort("category_name", 1)
+    return render_template("add_word.html", categories=categories)
 
 
 
