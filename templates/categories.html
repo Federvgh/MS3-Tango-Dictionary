@@ -9,10 +9,12 @@
         <strong>{{ category.category_1 }}</strong>: {{ category.Word }}
         </div>
           <div class="collapsible-body">
-        <strong>{{ category.Meaning }}</strong>
+        <strong>{{ category.Definition }}</strong>
+        <p>{{ category.Meaning }}</p>
         </div>
         <div class="collapsible-body">
-        <strong>{{ category.Link }}</strong>
+        <strong>{{ category.Example }}</strong>
+        <p>{{ category.Link }}</p>
         </div>
       </li>
         {% endfor %}
