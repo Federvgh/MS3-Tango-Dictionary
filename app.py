@@ -25,6 +25,13 @@ def get_base():
     return render_template("base.html")
 
 
+@app.route("/")
+@app.route("/get_categories")
+def categories():
+    categories = mongo.db.categories.find()
+    return render_template("categories.html", categories=categories)
+
+
 #Register existing user
 
 @app.route("/register", methods=["GET", "POST"])
