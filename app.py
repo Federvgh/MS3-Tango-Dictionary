@@ -26,10 +26,10 @@ def get_base():
 
 
 @app.route("/")
-@app.route("/get_categories")
-def categories():
-    categories = list(mongo.db.categories.find())
-    return render_template("categories.html", categories=categories)
+@app.route("/get_words")
+def words():
+    words = list(mongo.db.words.find())
+    return render_template("words.html", words=words)
 
 
 #Register existing user
