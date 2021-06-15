@@ -117,7 +117,7 @@ def add_word():
             "Link": request.form.get("Link"),
             "created_by": session["user"]
             }
-        mongo.db.categories.insert_one(word)
+        mongo.db.words.insert_one(word)
         flash("Word added Successfully")
         return redirect(url_for("add_word"))
 
