@@ -19,14 +19,9 @@ app.secret_key = os.environ.get("SECRET_KEY")
 mongo = PyMongo(app)
 
 
-@app.route("/")
-@app.route("/get_base")
-def get_base():
-    return render_template("base.html")
-
 
 @app.route("/")
-@app.route("/get_words")
+@app.route("/words")
 def words():
     words = list(mongo.db.words.find())
     return render_template("words.html", words=words)

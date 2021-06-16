@@ -4,21 +4,25 @@
 <h4 class="center-align">Add Word</h4>
 <ul class="collapsible popout">
     <li>
-        {% for words in words %}
+        {% for word in words %}
         <div class="collapsible-header">
-            <strong>{{ words.category_name }}</strong>
+            <strong>{{ word.Word }}</strong>
         </div>
         <div class="collapsible-body">
-            {{ words.Word }}<br>
+              <p><span class="font-weight-bold"><strong>Type of word:  </strong>  
+                </span>{{ word.category_name }}</p>
         </div>
         <div class="collapsible-body">
-            {{ words.Meaning }}<br>
+                <p><span class="font-weight-bold"><strong>Meaning:  </strong>
+                </span>{{ word.Meaning }}</p>
         </div>
         <div class="collapsible-body">
-            {{ words.Link }}<br>
+                <p><span class="font-weight-bold"><strong>Used in this Song:  </strong> 
+                </span>{{ word.Link }}</p>
         </div>
         <div class="collapsible-body">
-            {{ words.created_by }}<br>
+                 <p><span class="font-weight-bold"><strong>Submitted by:  </strong>
+                </span>{{ word.created_by }}</p>
         </div>
     </li>
     {% endfor %}
