@@ -2,9 +2,13 @@
 {% block content %}
 
 <h4 class="center-align">Add Word</h4>
+<div class="container">
+    <div class="row">
+        <div class="col s6">   
 <ul class="collapsible popout">
-    <li>
+    
         {% for word in words %}
+        <li>
         <div class="collapsible-header">
             <strong>{{ word.Word }}</strong>
         </div>
@@ -25,7 +29,10 @@
                 </span>{{ word.created_by }}</p>
         </div>
     </li>
-    {% endfor %}
+        {% endfor %}
 </ul>
+</div>     
+</div>
+</div>
 
 {% endblock %}
