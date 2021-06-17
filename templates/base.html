@@ -14,13 +14,12 @@
 <body>
         <header>
             
-    <nav class="nav-extended #004d40 teal darken-4">
+    <nav style="background-color: rgb(105, 3, 3);">
         <!--top navbar-->
         <div class="nav-wrapper">
         <a href="#!" class="brand-logo">Menu</a>
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
         <ul class="right hide-on-med-and-down">
-            <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
                 <li><a href="{{ url_for('words') }}">Dictionary</a></li>
             {% if session.user %}

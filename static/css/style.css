@@ -1,24 +1,38 @@
+body{
+    background-color: rgb(32, 27, 27);
+}
+
+.btn{
+    background-color: rgb(105, 3, 3);
+}
 
 h4{
     margin-top: 50px;
     margin-bottom: 50px;
-    color: #004d40 ;
+    color: white;
+}
 
+.collapsible-body{
+    color: white;
+}
+
+strong {
+    color: white;
 }
 
 .alert h5{
-    color: rgb(0, 88, 91);
+    color: white;
     line-height: 2;
 }
 
 .collapsible-header {
-  background-color: #a9c7dd ;
-  border-bottom: 1px solid #4a148c;
+  background-color: rgb(105, 3, 3);
+  border-bottom: 1px solid black;
 }
 
 .collapsible-body{
     padding-top: 5px;
     padding-bottom: 5px;
-    background-color: rgb(132, 160, 161);
+    background-color: rgb(105, 3, 3);
 }
 
