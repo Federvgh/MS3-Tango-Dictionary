@@ -10,4 +10,13 @@ h4{
     line-height: 2;
 }
 
+.collapsible-header {
+  background-color: #a9c7dd ;
+  border-bottom: 1px solid #4a148c;
+}
 
+.collapsible-body{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: rgb(132, 160, 161);
+}
