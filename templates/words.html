@@ -5,7 +5,6 @@
 <div class="container">
     <div class="row">
         <div class="col offset-s2 s8 offset-s2">
-            <div class="row card-panel">
                 <form action="{{ url_for('search') }}" method="post" class="col s12">
                     <div class="row valign-wrapper center-align">
                         <div class="input-field col s12 m8">
@@ -20,47 +19,47 @@
                         </div>
                     </div>
                 </form>
-            </div>
         </div>
     </div>
 </div>
-    {% if words|length > 0 %}
+{% if words|length > 0 %}
 <div class="container">
     <div class="row">
-        <div class="col s12">   
-<ul class="collapsible popout">
-    
-        {% for word in words %}
-        <li>
-        <div class="collapsible-header">
-            <strong>{{ word.Word }}</strong>
-        </div>
-        <div class="collapsible-body">
-              <p><span class="font-weight-bold"><strong>Type of word:  </strong>  
-                </span>{{ word.category_name }}</p>
-        </div>
-        <div class="collapsible-body">
-                <p><span class="font-weight-bold"><strong>Meaning:  </strong>
-                </span>{{ word.Meaning }}</p>
-        </div>
-        <div class="collapsible-body">
-                <p><span class="font-weight-bold"><strong>Used in this Song:  </strong> 
-                </span>{{ word.Link }}</p>
-        </div>
-        <div class="collapsible-body">
-                 <p><span class="font-weight-bold"><strong>Submitted by:  </strong>
-                </span>{{ word.created_by }}</p>
-        </div>
-    </li>
-        {% endfor %}
-</ul>
-    {% else %}
+        <div class="col s12">
+            <ul class="collapsible popout">
 
-       <h4 class="center-align">No Results Try again!</h4> 
+                {% for word in words %}
+                <li>
+                    <div class="collapsible-header">
+                        <strong>{{ word.Word }}</strong>
+                    </div>
+                    <div class="collapsible-body">
+                        <p><span class="font-weight-bold"><strong>Type of word: </strong>
+                            </span>{{ word.category_name }}</p>
+                    </div>
+                    <div class="collapsible-body">
+                        <p><span class="font-weight-bold"><strong>Meaning: </strong>
+                            </span>{{ word.Meaning }}</p>
+                    </div>
+                    <div class="collapsible-body">
+                        <p><span class="font-weight-bold"><strong>Used in this Song: </strong>
+                            </span>{{ word.Link }}</p>
+                    </div>
+                    <div class="collapsible-body">
+                        <p><span class="font-weight-bold"><strong>Submitted by: </strong>
+                            </span>{{ word.created_by }}</p>
+                    </div>
+                </li>
+                {% endfor %}
+            </ul>
+            {% else %}
 
-    {% endif %}
-</div>     
+            <h4 class="center-align">No Results Try again!</h4>
+
+            {% endif %}
+        </div>
+    </div>
 </div>
-</div>
+
 
 {% endblock %}

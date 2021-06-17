@@ -3,47 +3,51 @@
 
 <h4 class="center-align">Add Word</h4>
 <div class="container">
-<div class="row card-panel grey lighten-5">
-    <form class="col s12 m4 offset-m4" method="POST" action="{{url_for('add_word') }}">
-        <div class="row">
-            <div class="input-field col s12">
-                <i class="fas fa-folder-open prefix light-blue-text text-darken-4"></i>
-                <select id="category_name" name="category_name" class="validate" required>
-                    <option value="" disabled selected>Choose Type Of Word</option>
-                    {% for category in categories %}
-                    <option value="{{ category.category_name }}">{{ category.category_name }}</option>
-                    {% endfor %}
-                </select>
-                <label for="category_name">Word Category</label>
+    <div class="row">
+        <div class="col offset-s3 s6 offset-s3">
+            <div class="row card-panel">
+                <form method="POST" action="{{url_for('add_word') }}">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="fas fa-folder-open prefix light-blue-text text-darken-4"></i>
+                            <select id="category_name" name="category_name" class="validate" required>
+                                <option value="" disabled selected>Choose Type Of Word</option>
+                                {% for category in categories %}
+                                <option value="{{ category.category_name }}">{{ category.category_name }}</option>
+                                {% endfor %}
+                            </select>
+                            <label for="category_name">Word Category</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <textarea id="Word" name="Word" minlength="5" maxlength="200"
+                                class="materialize-textarea validate" required></textarea>
+                            <label for="Word">Word</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <textarea id="Meaning" name="Meaning" minlength="5" maxlength="200"
+                                class="materialize-textarea validate" required></textarea>
+                            <label for="Meaning">Meaning</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="Link" name="Link" type="text" minlegth="2" maxlength="70" class="validate"
+                                required>
+                            <label for="Link">Link</label>
+                        </div>
+                    </div>
+                    <!-- Button -->
+                    <div class="center-align">
+                        <button type="submit" class="btn waves-effect waves-light">Submit</button>
+                    </div>
+                </form>
             </div>
         </div>
-        <div class="row">
-            <div class="input-field col s12">
-                <textarea id="Word" name="Word" minlength="5" maxlength="200" class="materialize-textarea validate"
-                    required></textarea>
-                <label for="Word">Word</label>
-            </div>
-        </div>
-        <div class="row">
-            <div class="input-field col s12">
-                <textarea id="Meaning" name="Meaning" minlength="5" maxlength="200"
-                    class="materialize-textarea validate" required></textarea>
-                <label for="Meaning">Meaning</label>
-            </div>
-        </div>
-        <div class="row">
-            <div class="input-field col s12">
-                <input id="Link" name="Link" type="text" minlegth="2" maxlength="70" class="validate"
-                    required>
-                <label for="Link">Link</label>
-            </div>
-        </div>
-        <!-- Button -->
-        <div class="center-align">
-            <button type="submit" class="btn waves-effect waves-light">Submit</button>
-        </div>
-    </form>
-</div>
+    </div>
 </div>
 
 
