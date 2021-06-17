@@ -27,6 +27,14 @@ def words():
     return render_template("words.html", words=words)
 
 
+
+@app.route("/search", methods=["GET", "POST"])
+def search():
+    query = request.form.get("query")
+    words = list(mongo.db.words.find({"$text": {"$search": query}}))
+    return render_template("words.html", words=words)    
+
+
 #Register existing user
 
 @app.route("/register", methods=["GET", "POST"])

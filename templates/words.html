@@ -4,6 +4,29 @@
 <h4 class="center-align">Dictionary</h4>
 <div class="container">
     <div class="row">
+        <div class="col offset-s2 s8 offset-s2">
+            <div class="row card-panel">
+                <form action="{{ url_for('search') }}" method="post" class="col s12">
+                    <div class="row valign-wrapper center-align">
+                        <div class="input-field col s12 m8">
+                            <input type="text" name="query" id="query" minlength="3" class="validate" required>
+                            <label for="query">Search</label>
+                        </div>
+                        <div class="col s12 m4">
+                            <a href="{{ url_for('words') }}" class="btn text-shadow">Reset</a>
+                            <button type="submit" class="blue darken-1 btn text-shadow">
+                                Search
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+    {% if words|length > 0 %}
+<div class="container">
+    <div class="row">
         <div class="col s12">   
 <ul class="collapsible popout">
     
@@ -31,6 +54,11 @@
     </li>
         {% endfor %}
 </ul>
+    {% else %}
+
+       <h4 class="center-align">No Results Try again!</h4> 
+
+    {% endif %}
 </div>     
 </div>
 </div>
