@@ -34,7 +34,7 @@ def search():
     words = list(mongo.db.words.find({"$text": {"$search": query}}))
     return render_template("words.html", words=words)    
 
-
+#index by letter
 @app.route("/alfabet/<letter>", methods=["GET"])
 def search_by_letter(letter):
     regex = {"$regex": "^%s"  % letter}
