@@ -42,8 +42,6 @@ def search_by_letter(letter):
     return render_template("words.html", words=words)  
 
 
-
-
 #Register existing user
 
 @app.route("/register", methods=["GET", "POST"])
@@ -118,7 +116,7 @@ def logout():
     session.pop("user")
     return redirect(url_for("login"))   
 
-
+#Add new Word
 @app.route("/add_word", methods=["GET", "POST"]) 
 def add_word():
     if request.method == "POST":
@@ -135,6 +133,20 @@ def add_word():
 
     categories = mongo.db.categories.find().sort("category_name", 1)
     return render_template("add_word.html", categories=categories)
+
+
+#Edit words
+@app.route("/edit_word/<words_id>", methods=["GET", "POST"])
+def edit_word(words_id):
+    words = mongo.db.words.find_one({"_id": ObjectId(words_id)})
+    categories = mongo.db.categories.find().sort("category_name", 1)
+    return render_template("edit_word.html", words=words, categories=categories)
+
+#about 
+@app.route("/about")
+def about():
+
+    return render_template("about.html")    
 
 
 
