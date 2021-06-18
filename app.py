@@ -35,6 +35,15 @@ def search():
     return render_template("words.html", words=words)    
 
 
+@app.route("/alfabet/<letter>", methods=["GET"])
+def search_by_letter(letter):
+    regex = {"$regex": "^%s"  % letter}
+    words = list(mongo.db.words.find({"Word": regex}))
+    return render_template("words.html", words=words)  
+
+
+
+
 #Register existing user
 
 @app.route("/register", methods=["GET", "POST"])
