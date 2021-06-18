@@ -153,6 +153,15 @@ def edit_word(words_id):
     categories = mongo.db.categories.find().sort("category_name", 1)
     return render_template("edit_word.html", words=words, categories=categories)
 
+
+#delete word
+@app.route("/delete_word/<words_id>")
+def delete_word(words_id):
+    mongo.db.words.remove({"_id": ObjectId(words_id)})
+    flash("Word succesfully Deleted")
+    return redirect(url_for("words"))
+        
+
 #about 
 @app.route("/about")
 def about():
