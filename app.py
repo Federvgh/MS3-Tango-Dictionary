@@ -27,6 +27,14 @@ def words():
     return render_template("words.html", words=words)
 
 
+#about 
+@app.route("/about")
+def about():
+
+    return render_template("about.html")    
+        
+
+
 
 @app.route("/search", methods=["GET", "POST"])
 def search():
@@ -160,13 +168,6 @@ def delete_word(words_id):
     mongo.db.words.remove({"_id": ObjectId(words_id)})
     flash("Word succesfully Deleted")
     return redirect(url_for("words"))
-        
-
-#about 
-@app.route("/about")
-def about():
-
-    return render_template("about.html")    
 
 
 
