@@ -60,24 +60,24 @@
 
             {% for word in words %}
             <div class="card-body">
-                <div class="row">
-                    <div class="col-9">
+               
+                    <div class="col-9" >
                         <strong>{{ word.Word }}</strong>
                         <hr></span>
                     </div>
                     <div class="col-3">
-                        <p><span><strong>Type of word:</strong>
-                            </span>{{ word.category_name }}</p>
+                        <p><strong>Type of word:</strong>
+                        {{ word.category_name }}</p>
                     </div>
                 </div>
-                <strong>Meaning:</strong>
-                <p> {{ word.Meaning }}</p>
+                <p><strong>Meaning:</strong>
+                 {{ word.Meaning }}</p>
                 <p><strong>Used in this Song:</strong>
                     {{ word.Link }}</p>
                 <p><strong>Submitted by:</strong>
                     {{ word.created_by }}</p>
                 <hr>
-            </div>
+            
             {% endfor %}
 
             {% else %}
