@@ -11,9 +11,13 @@
                         <div class="input-field col s12">
                             <i class="fas fa-folder-open prefix"></i>
                             <select id="category_name" name="category_name" class="validate"; required>
-                                <option value="" disabled selected>Choose Type Of Word</option>
+                                <option value="" disabled>Choose Type Of Word</option>
                                 {% for category in categories %}
+                            {% if category.category_name == words.category_name %}
+                                <option value="{{ category.category_name }}" selected>{{ category.category_name }}</option>
+                            {% else %}
                                 <option value="{{ category.category_name }}">{{ category.category_name }}</option>
+                            {% endif %}
                                 {% endfor %}
                             </select>
                             <label for="category_name">Word Category</label>
@@ -22,27 +26,32 @@
                     <div class="row">
                         <div class="input-field col s12">
                             <textarea id="Word" name="Word" minlength="5" maxlength="200"
-                                class="materialize-textarea validate" required></textarea>
+                                class="materialize-textarea validate" required>{{ words.Word }}</textarea>
                             <label for="Word">Word</label>
                         </div>
                     </div>
                     <div class="row">
                         <div class="input-field col s12">
                             <textarea id="Meaning" name="Meaning" minlength="5" maxlength="200"
-                                class="materialize-textarea validate" required></textarea>
+                                class="materialize-textarea validate" required>{{ words.Meaning }}</textarea>
                             <label for="Meaning">Meaning</label>
                         </div>
                     </div>
                     <div class="row">
                         <div class="input-field col s12">
-                            <input id="Link" name="Link" type="text" minlegth="2" maxlength="70" class="validate"
-                                required>
+                            <input id="Link" name="Link" type="text" minlegth="2" maxlength="70" 
+                            value="{{ words.Link }}"  class="validate"  required>
                             <label for="Link">Link</label>
                         </div>
                     </div>
                     <!-- Button -->
                     <div class="center-align">
+                        <!-- submit button -->
                         <button type="submit" class="btn waves-effect waves-light">Edit Word</button>
+                        <!-- submit button -->
+                         <a href="{{ url_for('words') }}" class="btn waves-effect waves-light">
+                        Cancel <i class="fas fa-times-circle right"></i>
+                    </a>
                     </div>
                 </form>
             </div>
