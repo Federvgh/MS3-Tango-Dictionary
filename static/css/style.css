@@ -33,6 +33,8 @@ strong {
     line-height: 2;
 }
 
+
+
 .collapsible-header {
   background-color: rgb(105, 3, 3);
   border-bottom: 1px solid black;
@@ -56,6 +58,7 @@ footer {
   padding: 1rem;
   width: 100%;
   background-color: rgb(105, 3, 3);
- min-height: 10vh;
+  min-height: 5vh;
+
  
 }
