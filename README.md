@@ -16,9 +16,6 @@ and gives some examples with songs to better understand it.
   * [About](#about)
   * [Register](#register)
   * [Log In](#log-in)
-  * [User Tools](#user-tools)
-  * [Profile Dashboard](#profile-dashboard)
-  * [Submit Word](#submit-word)
   * [Search](#search)
 
 
@@ -97,3 +94,16 @@ The about page provides information about the dictionary and the reason why it w
 Users who have an account can login using their username and password. 
 If a visitor does not have an account, they will below a message "New Here? Register Account" with a link to take them to the registration page
 If the user enters their username and password they will be taken to their profile page.
+
+## Search
+On the dictionary page, users ot visitors can search for specific words located either in the word field or the meaning. 
+
+
+# Features left to implement
+
+- Pagination to avoid scrolling down 
+- contact form
+- an alert for the administrator when a word is submitted
+- Option to delete a user by an admin and for users to delete their accounts. 
+- Ability for a user to reset their password if they forget it. 
+- automatically open new browser when click in on the link for the song
