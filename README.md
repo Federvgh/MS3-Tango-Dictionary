@@ -219,9 +219,23 @@ Created_by: String
 
 - For editing Images
 
+## Testing
+I used W3C HTML Validator and W3C CSS Validator Services as well 
+as jshint to ensure there were no syntax errors in the project.
+I used the "Am i responsive" website to test resposive design. 
 
+* [Am I Responsive](http://ami.responsivedesign.is/)
+* [W3C Markup Validation Service](https://validator.w3.org/)
+* [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) 
+* [JS Hint](https://jshint.com/)
+* [PEP8 Online](http://pep8online.com/)
+* [GTMetrix](https://gtmetrix.com/)
 
+## Results
 
+![alt text](static/images/css.jpg "Html validation")
+![alt text](static/images/css.jpg "CSS validation")
+![alt text](static/images/jshint.jpg "javascript validation")
 
 
 

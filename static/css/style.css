@@ -58,19 +58,10 @@ input[type=text] {
 
 
 footer {
- 
   bottom: 0;
   padding: 1rem;
   width: 100%;
   background-color: rgb(105, 3, 3);
   min-height: 5vh;
-}
-
-#logo{
-    position:absolute;
-    top:10px; 
-    left:10px;
-    width:40px;
-    height:40px;
-    overflow:hidden;
+  
 }
