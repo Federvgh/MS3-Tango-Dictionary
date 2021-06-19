@@ -41,14 +41,6 @@ img{
     padding: 60px 20px;
 }
 
-footer {
-  
-  bottom: 0;
-  padding: 1rem;
-  width: 100%;
-  background-color: rgb(105, 3, 3);
-  min-height: 5vh;
-}
 
 .btn-small {
     margin: 5px;
@@ -62,4 +54,14 @@ footer {
 
 input[type=text] {
   color: white;
+}
+
+
+footer {
+ 
+  bottom: 0;
+  padding: 1rem;
+  width: 100%;
+  background-color: rgb(105, 3, 3);
+  min-height: 5vh;
 }

@@ -18,6 +18,7 @@ and gives some examples with songs to better understand it.
   * [Log In](#log-in)
   * [Search](#search)
 
+- [CRUD Functionality](#crud---create--read--update-and-delete)
 
 ## General
 The landing page of the website is the dictionary itself, this was done with the idea that people can search for words
@@ -107,3 +108,121 @@ On the dictionary page, users ot visitors can search for specific words located 
 - Option to delete a user by an admin and for users to delete their accounts. 
 - Ability for a user to reset their password if they forget it. 
 - automatically open new browser when click in on the link for the song
+
+# CRUD
+
+As part of the milestone project this application can perform CRUD operations.
+
+## Create
+
+### Add new words
+All registered users are able to add new words to the dictionary. Each submission creates a new record in the database.
+
+### Register new user
+Anyone who does not have an account is able to register for an account. The register function creates a new record in the database for that user. 
+
+## Read
+
+### Display words from Mongo DB
+All users are able to read from the database.
+The application pulls the words collection from the database and displays them in the dictionary.
+
+### Search
+All users are able to search for words within the dictionary. It will look for the parameteres on the DB and display the results.
+
+## Update & Delete
+
+### Edit words
+All users have the ability to delete or edit the words they submitted to the database, but only the ones they have submitted. The option to edit or
+delete will be shown on each word the user has submitted previously, otherewise there wont be an option.
+
+
+# Mongo DB Databse Structure
+The database used for this project is MongoDB. The Databse contains three collections. 
+- Categories 
+- Users
+- Words
+
+### Categories
+This collection contains the types of words. Each word can be either a Noun, Verb or a Phrase.
+
+```
+_id: ObjectID
+category_name: String
+```
+
+### Users
+The users collection stores all the data about registered users. The strucutre of the users collection is: 
+
+```
+_id: ObjectID
+user_name: String
+user_password: String 
+``` 
+
+The user_password string is hashed using the Werkzeug password hash function
+
+### words
+The words collection stores all the types words, their meaning, the category they are in, who created the entry and the link. The structure is as follows:
+
+```
+_id: ObjectID
+category_name: String
+Word: String
+Meaning: String
+Link: String
+Created_by: String
+```
+
+
+### Frameworks, Libraries & Programs Used
+
+## Languages
+* [HTML](https://en.wikipedia.org/wiki/HTML) 
+* [CSS](https://en.wikipedia.org/wiki/CSS) 
+* [JavaScript](https://en.wikipedia.org/wiki/JavaScript) 
+* [Python](https://www.python.org/)
+
+## Libraries
+
+* [Materialize](https://materializecss.com/) 
+* [Flask](https://flask.palletsprojects.com/en/2.0.x/)
+* [Jinja](https://www.palletsprojects.com/p/jinja/)
+* [Pymongo](https://pypi.org/project/pymongo/)
+
+## Hosting
+
+* [Heroku](https://www.heroku.com/home)
+
+
+1. Google Fonts
+
+- Google Font was used to import the Poppins font through the entire website
+
+2. Github
+
+- Github was used to store the code pushed through Gitpod
+
+3. Gitpod
+
+- Gitpod was the Integrated Development Environment used to develop the Website.
+
+4. Balsamiq
+
+- Balsamiq was used to create the wireframes during the design process.
+
+5.  Chrome DevOps Tools
+
+- Chrome DevOps Tools was used to check elements and help debug issues with the site layout and try different CSS styles.
+
+6. https://pixlr.com/x/
+
+- For editing Images
+
+
+
+
+
+
+
+
