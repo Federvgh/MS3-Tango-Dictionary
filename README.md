@@ -1,59 +1,51 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# ms3-Tango-dictionary
+For my Milestone 3 project I'm creating a dictionary of Tango slang that explains the terminology of this music
+and gives some examples with songs to better understand it.
 
-Welcome Federvgh,
+# Table of Contents
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
+- [MS3-Tango-dictionary](#MS3-Tango-dictionary)
+- [UX](#ux)
+  * [General](#general)
+  * [User Stories](#user-stories)
+  * [Wireframes](#wireframes)
 
-## Gitpod Reminders
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## General
+The landing page of the website is the dictionary itself, this was done with the idea that people can search for words
+even if they are not registered on the website. I have created and index by letter to be easier to search a specific words.
+Once the user is registered and logged in they can add their own words, edit them or delete them if they choose to.
+The "About" page explaines the purpose of the website. 
 
-`python3 -m http.server`
+## User Stories
 
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidently make it public then you can create a new one with _Regenerate API Key_.
-
-## Updates Since The Instructional Video
-
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
----
-
-Happy coding!
+<details>
+<summary><strong>User stories: visitor</strong></summary>
+<br>
+<ol>
+<li>As a visitor the first thing i would like to see is the dictionary</li>
+<p>Thats why the landing page is fully accessible to all visitors, no need to be registered.</p>
+<li>As a visitor I want to search for specific words</li>
+<p>A search bar is available on the main dictionary page to search all words.</p>
+<li>As a visitor I want to easily navigate through the website</li>
+<p>The main dictionary page has all teh words and you can scroll down to see all the words loaded.</p>
+</ol>
+</details>
+<br>
+<details>
+<summary><strong>User stories: user</strong></summary>
+<br>
+<h3>Registerd users have the same access as the visitors</h3>
+<ol>
+<li>As a user I want to log in</li>
+<p>The log in page is accessible in the navigation bar in the top right.</p>
+<li>As a user I want to add a new word to the dictionary</li>
+<p>After a user adds a word to the dictionary they will receive a message with the task succesfully completed,
+then they can add another word o go back to the main screen to view their recently added word.</p>
+<li>As a user I want to edit words</li>
+<p>From the user dashboard, users are able to edit words which are pending approval.</p>
+<li>As a user I want to log out</li>
+<p>The user can log out of their account by going to the navigation bar in the top right.</p>
+</ol>
+</details>
+<br>
