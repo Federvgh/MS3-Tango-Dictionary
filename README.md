@@ -9,6 +9,17 @@ and gives some examples with songs to better understand it.
   * [General](#general)
   * [User Stories](#user-stories)
   * [Wireframes](#wireframes)
+  * [Features](#features)
+  * [Dictionary](#dictionary)
+  * [Navigation](#navigation)
+  * [Footer](#footer)
+  * [About](#about)
+  * [Register](#register)
+  * [Log In](#log-in)
+  * [User Tools](#user-tools)
+  * [Profile Dashboard](#profile-dashboard)
+  * [Submit Word](#submit-word)
+  * [Search](#search)
 
 
 ## General
@@ -49,31 +60,40 @@ then they can add another word o go back to the main screen to view their recent
 </ol>
 </details>
 <br>
-<details>
-<summary><strong>User stories: editor</strong></summary>
-<br>
-<h3>Editors have all the same access as the visitors and registered users</h3>
-<ol>
-<li>As an editor I want to edit the words i submitted</li>
-<p>When any logged in user submits a word, it must fist be approved by an editor before it is published to the main dictionary. The editor can approve words in the editor dashboard.</p>
-<li>As an editor I want to reject a submitted word.</li>
-<p>On the editor dashboard, editors can reject a submitted word by clicking on the "Reject" button if the word is not relevant to the dictionary.</p>
-<li>As an editor I want to edit words</li>
-<p>Editors can edit words before they are approved in the editor dashboard. Editors can also edit any word in the main dictionary by clicking "Edit" next to the word in the main dictionary or serach page</p>
-<li>As an editor I want to delete words</li>
-<p>If an editor thinks a word is no longer relevant, they can delete that word from the dictionary by either navigating to it in the main dictionary or by searching for the word and deleting it in the search page.</p>
-</ol>
-</details>
-<br>
-<details>
-<summary><strong>User stories: Admin</strong></summary>
-<br>
-<h3>Administrators have all the rights and permissions of editors</h3>
-<ol>
-<li>As an administrator I want to control user types for all registerd users</li>
-<p>Administrators have the right to change any registerd user between "user", "editor", "admin".</p>
-<li>As an admin I don't want to edit my user type by mistake</li>
-<p>An administrator cannot change their own user type.</p>
-</ol>
-</details>
-<br>
+
+
+# Features
+
+## Dictionary
+The landing page is the dictionary, you can see all the words that have been added since it was created, on the top you can see the search bar
+and there is an index of letters to filter the search, below that you can find each word in a card separated by lines, with different categories, 
+"type of word", "meaning" "used in this song".
+
+
+## Navigation
+
+The navbar at the top of the page has the page title and logo aligned to the left side and the links aligned to the right side. 
+The links displayed on the navbar change depending wheter the user is logged in or not. If a visitor is not logged in, they will see a 
+link for the about page, the dictionary page, the log page and the register page. 
+
+If the user is logged in, they will not see the register and log in page links anymore, instead they will see 
+"About" "Dictionary" "Profile" "Addd word" and "Logout" they will be able to add a new word and logout. 
+
+
+## Footer
+The footer is standard across all pages and shows the purpose for the website.
+
+
+## Register
+
+The register option gives the visitors the posiblity to register and contribuite adding words to the dictionary. 
+The visitor needs to select a username and password. Form validation makes sure the username is not shorter than 5 characters or
+empty fields. If the username is not available, it will receive a prompt message saying "Username already exists".
+
+## About
+The about page provides information about the dictionary and the reason why it was created.
+
+## Log In
+Users who have an account can login using their username and password. 
+If a visitor does not have an account, they will below a message "New Here? Register Account" with a link to take them to the registration page
+If the user enters their username and password they will be taken to their profile page.

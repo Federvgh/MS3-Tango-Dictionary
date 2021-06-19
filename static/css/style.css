@@ -20,9 +20,6 @@ h4{
     color: white;
 }
 
-.collapsible-body{
-    color: white;
-}
 
 strong {
     color: white;
@@ -38,19 +35,6 @@ p{
     line-height: 2;
 }
 
-
-
-.collapsible-header {
-  background-color: rgb(105, 3, 3);
-  border-bottom: 1px solid black;
-}
-
-.collapsible-body{
-    padding-top: 5px;
-    padding-bottom: 5px;
-    background-color: rgb(105, 3, 3);
-   
-}
 
 img{
     float: right;
@@ -72,9 +56,10 @@ footer {
 }
 
 
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 5px;
+.materialize-textarea {
+    color: white;
 }
 
+input[type=text] {
+  color: white;
+}
