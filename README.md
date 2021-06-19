@@ -21,10 +21,10 @@ and gives some examples with songs to better understand it.
 - [CRUD Functionality](#crud---create--read--update-and-delete)
 
 ## General
-The landing page of the website is the dictionary itself, this was done with the idea that people can search for words
-even if they are not registered on the website. I have created and index by letter to be easier to search a specific words.
-Once the user is registered and logged in they can add their own words, edit them or delete them if they choose to.
-The "About" page explaines the purpose of the website. 
+The landing page of the website is the About page, this was done with the idea that people can read what the website is about 
+first. On the Dictionary page you can find words and their meaning, I have created and index by letter to be easier to search 
+a specific words. Once the user is registered and logged in they can add their own words, edit them or delete them if they 
+choose to. The "About" page explaines the purpose of the website. 
 
 ## User Stories
 
