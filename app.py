@@ -156,10 +156,12 @@ def edit_word(words_id):
             }
         mongo.db.words.update({"_id": ObjectId(words_id)}, word)
         flash("Word succesfully Updated")
+        return redirect(url_for("words"))        
 
     words = mongo.db.words.find_one({"_id": ObjectId(words_id)})
     categories = mongo.db.categories.find().sort("category_name", 1)
     return render_template("edit_word.html", words=words, categories=categories)
+    
 
 
 #delete word

@@ -49,3 +49,31 @@ then they can add another word o go back to the main screen to view their recent
 </ol>
 </details>
 <br>
+<details>
+<summary><strong>User stories: editor</strong></summary>
+<br>
+<h3>Editors have all the same access as the visitors and registered users</h3>
+<ol>
+<li>As an editor I want to edit the words i submitted</li>
+<p>When any logged in user submits a word, it must fist be approved by an editor before it is published to the main dictionary. The editor can approve words in the editor dashboard.</p>
+<li>As an editor I want to reject a submitted word.</li>
+<p>On the editor dashboard, editors can reject a submitted word by clicking on the "Reject" button if the word is not relevant to the dictionary.</p>
+<li>As an editor I want to edit words</li>
+<p>Editors can edit words before they are approved in the editor dashboard. Editors can also edit any word in the main dictionary by clicking "Edit" next to the word in the main dictionary or serach page</p>
+<li>As an editor I want to delete words</li>
+<p>If an editor thinks a word is no longer relevant, they can delete that word from the dictionary by either navigating to it in the main dictionary or by searching for the word and deleting it in the search page.</p>
+</ol>
+</details>
+<br>
+<details>
+<summary><strong>User stories: Admin</strong></summary>
+<br>
+<h3>Administrators have all the rights and permissions of editors</h3>
+<ol>
+<li>As an administrator I want to control user types for all registerd users</li>
+<p>Administrators have the right to change any registerd user between "user", "editor", "admin".</p>
+<li>As an admin I don't want to edit my user type by mistake</li>
+<p>An administrator cannot change their own user type.</p>
+</ol>
+</details>
+<br>
