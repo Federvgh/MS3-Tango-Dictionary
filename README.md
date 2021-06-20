@@ -4,7 +4,7 @@ and give some examples with songs to better understand it.
 
 ![Am I responsive image](static/images/responsive.jpg "Responsive design for Tango Dictionary")
 
-Live Demo [here](http://ms3-tango-dictionary.herokuapp.com/about).
+Live Demo [here](https://ms3-tango-dictionary.herokuapp.com/).
 
 # Table of Contents
 
@@ -25,10 +25,9 @@ Live Demo [here](http://ms3-tango-dictionary.herokuapp.com/about).
 ## UX
 
 ## General
-The landing page of the website is the About page, this was done with the idea that people can read what the website is about
-first. On the Dictionary page you can find words and their meaning, I have created and index by letter for it to be easier to search
-a specific word. Once the user is registered and logged in, they can add their own words, edit them or delete them if they
-choose to. The "About" page explains the purpose of the website.
+The landing page of the website is the Dictionary page, there you can see a variety of words and their meaning, I have created and index by letter 
+for it to be easier to search a specific word. If a visitor decides to register and logs in, they can add their own words, edit them or delete 
+them if they choose to. In the "About" section people can read what is the purpose of the website. 
 
 ## User Stories
 
