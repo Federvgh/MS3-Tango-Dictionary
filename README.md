@@ -2,6 +2,8 @@
 For my Milestone 3 project I'm creating a dictionary of Tango slang that explains the terminology of this music
 and gives some examples with songs to better understand it.
 
+![Am I responsive image](static/images/responsive.jpg "Responsive design for Tango Dictionary")
+
 # Table of Contents
 
 - [MS3-Tango-dictionary](#MS3-Tango-dictionary)
@@ -194,6 +196,7 @@ Created_by: String
 
 * [Heroku](https://www.heroku.com/home)
 
+## Other Resources
 
 1. Google Fonts
 
@@ -229,7 +232,6 @@ I used the "Am i responsive" website to test resposive design.
 * [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) 
 * [JS Hint](https://jshint.com/)
 * [PEP8 Online](http://pep8online.com/)
-* [GTMetrix](https://gtmetrix.com/)
 
 ## Results
 

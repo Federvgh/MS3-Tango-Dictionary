@@ -1,6 +1,10 @@
 body{
     background-color: rgb(32, 27, 27);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
+    
 
 .btn{
     background-color: rgb(105, 3, 3);
@@ -36,10 +40,17 @@ p{
 }
 
 
-img{
-    float: right;
-    padding: 60px 20px;
+center{
+display: block;
+width: 30%;
+margin-left: auto;
+margin-right: auto;
 }
+
+img {
+max-width: 90%;
+}
+
 
 
 .btn-small {
@@ -58,10 +69,11 @@ input[type=text] {
 
 
 footer {
-  bottom: 0;
-  padding: 1rem;
-  width: 100%;
-  background-color: rgb(105, 3, 3);
-  min-height: 5vh;
+margin-top: auto;
+background-color: rgb(105, 3, 3);
   
 }
+
+
+
+
