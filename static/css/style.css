@@ -88,6 +88,14 @@ background-color: rgb(105, 3, 3);
 @media only screen and (max-width: 600px) {
   .row .col.s6  {
     width: auto;
-    margin-left: 37px
+    margin-left: 37px;
+    
   }
 }
+@media only screen and (max-width: 600px) {
+.row {flex-flow: column;
+}
+  }
+
+
+

@@ -30,8 +30,7 @@ choose to. The "About" page explaines the purpose of the website.
 
 ## User Stories
 
-<details>
-<summary><strong>User stories: visitor</strong></summary>
+<strong>User stories: visitor</strong>
 <br>
 <ol>
 <li>As a visitor the first thing i would like to see is the dictionary</li>
@@ -41,10 +40,9 @@ choose to. The "About" page explaines the purpose of the website.
 <li>As a visitor I want to easily navigate through the website</li>
 <p>The main dictionary page has all teh words and you can scroll down to see all the words loaded.</p>
 </ol>
-</details>
+
 <br>
-<details>
-<summary><strong>User stories: user</strong></summary>
+<strong>User stories: user</strong>
 <br>
 <h3>Registerd users have the same access as the visitors</h3>
 <ol>
@@ -58,9 +56,13 @@ then they can add another word o go back to the main screen to view their recent
 <li>As a user I want to log out</li>
 <p>The user can log out of their account by going to the navigation bar in the top right.</p>
 </ol>
-</details>
 <br>
 
+## Colors
+
+I decided to use the colors red and black with modifying the tones a little bit,
+I think this colors symbolyze the pasion in Tango, specially the red color, but 
+I gave it a burgondy or "wine" kind of shade.
 
 # Features
 
@@ -200,7 +202,7 @@ Created_by: String
 
 1. Google Fonts
 
-- Google Font was used to import the Poppins font through the entire website
+- Google Font was used to import icons
 
 2. Github
 
@@ -225,7 +227,8 @@ Created_by: String
 ## Testing
 I used W3C HTML Validator and W3C CSS Validator Services as well 
 as jshint to ensure there were no syntax errors in the project.
-I used the "Am i responsive" website to test resposive design. 
+I used the "Am i responsive" website to test responsive design. 
+I used PEP8 for compliance for python code.
 
 * [Am I Responsive](http://ami.responsivedesign.is/)
 * [W3C Markup Validation Service](https://validator.w3.org/)
@@ -239,6 +242,98 @@ I used the "Am i responsive" website to test resposive design.
 ![alt text](static/images/css.jpg "CSS validation")
 ![alt text](static/images/jshint.jpg "javascript validation")
 
+### Testing User Stories from User Experience (UX) Section
+
+- #### First Time and Returning Visitor
+
+1.  As a First Time Visitor, I want to easily understand the main purpose of the site, thats why the the about page
+is the first one to show, It gives a brief explanation of the purpose of the site.
+2. After that you can either go to the dictionary and search for words and you can add new ones
+
+### Further Testing
+
+- The Website was tested on Google Chrome, Internet Explorer, Microsoft Edge, Opera. All the browsers worked as expected.
+- The website was viewed on different devices such as Desktops, Laptops, Android phones, iPhones, etc, and I used http://www.responsinator.com/ 
+as well to check responsiveness. I had issues with small devices in the add word screen that was fixed with a media query.
+- I asked friends and family members to review the site and give me feedback about the user experience, most of the feedback was good, 
+the colors where well received, the search parameters worked as expected and the sign in and register site where intuitive. 
+- Form validation is required to ensure the correct inputs are taken and that all fields are required.
 
 
+#### Performace Test
+[Desktop Lighthouse](static/images/lighthouse-desktop.jpg)<br>
+
+[Mobile Lighthouse](static/images/lighthouse-mobile.jpg)<br>
+
+
+
+# Deployment
+This site is deployed on [Heroku](https://www.heroku.com/home). Heroku is an online hosting service for applications 
+like python. Deployment procedure below.
+
+## Heroku
+1. Navigate to the repository for this project [MS3-Tango-dictionary](https://github.com/Federvgh/MS3-Tango-Dictionary) 
+and click on the green button to open the menu
+
+2. You can either download the zip file and extract it into your local directory or copy the link to the repository and clone it in the command line
+
+3. Create a new repository in Github and push this project into the new repository.
+
+4. Log in to [Heroku](https://www.heroku.com/home) if you have an account or if you do not have an account, create a new account.
+
+5. when in the Heroku dashboard, click on the "New" button and then select "Create new app"
+
+6. On the next screen enter an app name (must be unique) and select the region closest to you. 
+
+7. In the deploy section, click on "Connect to GitHub"
+
+8. Select your github user account and search for the repository that you want to deploy.
+
+9. If you want, you can enable Automatic Deployment. This will build your application each time you push any changes to GitHub.
+
+10. Navigate to settings and select "Reveal Config Vars. Here you will enter the configuration keys and values from your env.py file. They should look similar to this:
+- IP: ```0.0.0.0```
+- PORT: ```5000```
+- MONGO_DBNAME: [name of your database]
+- MONGO_URI: ```mongodb://<dbuser>:<dbpassword>@ds225442.mlab.com:25442/<dbname>```
+- SECRET_KEY: [any string of characters. the longer the better]
+
+
+11. Now go back to the "Deploy" tab and click on "Deploy Branch"
+
+12. The website should be deployed on ```https://[your_app_name].herokuapp.com/```
+
+## Local Deployment
+1. Create a development project folder and navigate to it
+``` cd /[folder path]```
+2. Initialise Git
+``` git init```
+3. Clone the project repository into your local development folder
+``` git clone https://github.com/bowets/ms3-crew-dictionary.git```
+2. Install Python 3
+3. Install Pip
+4. Create a virtual environment for your local project
+5. Install Flask
+6. Install PyMongo
+7. Install the packages in the requirements.txt file
+8. Create an env.py file with the following parameters:
+- IP: ```0.0.0.0```
+- PORT: ```5000```
+- MONGO_DBNAME: [name of your database]
+- MONGO_URI: ```mongodb://<dbuser>:<dbpassword>@ds225442.mlab.com:25442/<dbname>```
+- SECRET_KEY: [any string of characters. the longer the better]
+
+The project already contains a ```.gitignore``` file which contains env.py
+9. Run the project ```python app.py```
+
+
+## Credits
+
+- I took some ideas from this project https://ms3-crew-dictionary.herokuapp.com/dictionary, like the Pagination
+but i decided to use the word index to show the words.
+- I took excerpts from the mini project to do the "Add word" section.
+- My Mentor Antonio Rodriguez was really helpful and helped when I was stuck.
+- The slack community was really helpful, I found a lot of solutions to simple issues that were already posted.
+- Code institute support helped me a lot with very specific details and issues that I had.
+- I took a lot of information and ideas from YouTube channels
 
