@@ -7,7 +7,6 @@ and give some examples with songs to better understand it.
 # Table of Contents
 
 - [MS3-Tango-dictionary](#MS3-Tango-dictionary)
-- [UX](#ux)
 * [General](#general)
 * [User Stories](#user-stories)
 * [Wireframes](#wireframes)
@@ -21,9 +20,10 @@ and give some examples with songs to better understand it.
 * [Search](#search)
 
 - [CRUD Functionality](#crud---create--read--update-and-delete)
+##UX
 
 ## General
-The landing page of the website is the About page, this was done with the idea that people can read what the website is about.
+The landing page of the website is the About page, this was done with the idea that people can read what the website is about
 first. On the Dictionary page you can find words and their meaning, I have created and index by letter for it to be easier to search
 a specific word. Once the user is registered and logged in, they can add their own words, edit them or delete them if they
 choose to. The "About" page explains the purpose of the website.
@@ -38,7 +38,7 @@ choose to. The "About" page explains the purpose of the website.
 <li>As a visitor I want to search for specific words</li>
 <p>A search bar is available on the main dictionary page to search all words.</p>
 <li>As a visitor I want to easily navigate through the website</li>
-<p>The main dictionary page has all teh words and you can scroll down to see all the words loaded.</p>
+<p>The main dictionary page has all thE words and you can scroll down to see all the words loaded.</p>
 </ol>
 
 <br>
@@ -52,7 +52,8 @@ choose to. The "About" page explains the purpose of the website.
 <p>After a user adds a word to the dictionary they will receive a message with the task succesfully completed,
 then they can add another word o go back to the main screen to view their recently added word.</p>
 <li>As a user I want to edit words</li>
-<p>From the user dashboard, users are able to edit words which are pending approval.</p>
+<p>users are able to edit words that they have created, they will the option to edit
+or delete them.</p>
 <li>As a user I want to log out</li>
 <p>The user can log out of their account by going to the navigation bar in the top right.</p>
 </ol>
@@ -73,26 +74,26 @@ along the way, and they dont look exactly the same.
 
 ## Colors
 
-I decided to use the colors red and black with modifying the tones a little bit.
+I decided to use the colors red and black, modifying the tones a little bit.
 I think this colors symbolize the passion in Tango, specially the red color, but
 I gave it a burgundy or "wine" kind of shade.
 
 # Features
 
 ## Dictionary
-The landing page is the dictionary. You can see all the words that have been added since it was created, on the top you can see the search bar.
+The landing page is the dictionary. You can see all the words that have been added since it was created, on the top you can see the search bar
 and there is an index of letters to filter the search, below that you can find each word in a card separated by lines, with different categories,
 "type of word", "meaning" "used in this song."
 
 
 ## Navigation
 
-The navbar at the top of the page has the page title and logo aligned to the left side and the links aligned to the right side.
+The navbar at the top of the page has all the links to the right side, and on the left a menu will display when the device 
+is smaller, also the "Tango Dictionary" text on the left acts as a link to the dictionary itself.
 The links displayed on the navbar change depending whether the user is logged in or not. If a visitor is not logged in, they will see a
 link for the about page, the dictionary page, the log page and the register page.
-
-If the user is logged in, they will not see the register and log in page links anymore, instead they will see "About" "Dictionary" "Profile" "Addd word" and "Logout" they will be able to add a new word and logout.
-
+If the user is logged in, they will not see the register and log in page links anymore,
+instead they will see "About" "Dictionary" "Profile" "Addd word" and "Logout" and they will be able to add a new word and logout.
 
 ## Footer
 The footer is standard across all pages and shows the purpose for the website.
@@ -121,7 +122,6 @@ On the dictionary page, users ot visitors can search for specific words located 
 - contact form
 - an alert for the administrator when a word is submitted
 - Option to delete a user by an admin and for users to delete their accounts.
-- Ability for a user to reset their password if they forget it.
 - automatically open new browser when click in on the link for the song
 
 # CRUD
@@ -249,7 +249,7 @@ I used PEP8 for compliance for python code.
 
 ## Results
 
-![alt text](static/images/css.jpg "Html validation")
+![alt text](static/images/html.jpg "Html validation")
 ![alt text](static/images/css.jpg "CSS validation")
 ![alt text](static/images/jshint.jpg "javascript validation")
 
@@ -259,7 +259,7 @@ I used PEP8 for compliance for python code.
 
 1. As a First Time Visitor, I want to easily understand the main purpose of the site, thats why the about page.
 is the first one to show, It gives a brief explanation of the purpose of the site.
-2. After that you can either go to the dictionary and search for words and you can add new ones
+2. After that you can either go to the dictionary and search for words and you can register an account.
 
 ### Further Testing
 
@@ -316,29 +316,11 @@ and click on the green button to open the menu
 
 12. The website should be deployed on ```https://[your_app_name].herokuapp.com/```
 
-## Local Deployment
-1. Create a development project folder and navigate to it
-``` cd /[folder path]```
-2. Initialise Git
-``` git init```
-3. Clone the project repository into your local development folder
-``` git clone https://github.com/bowets/ms3-crew-dictionary.git```
-2. Install Python 3
-3. Install Pip
-4. Create a virtual environment for your local project
-5. Install Flask
-6. Install PyMongo
-7. Install the packages in the requirements.txt file
-8. Create an env.py file with the following parameters:
-- IP: ```0.0.0.0```
-- PORT: ```5000```
-- MONGO_DBNAME: [name of your database]
-- MONGO_URI: ```mongodb://:@ds225442.mlab.com:25442/```
-- SECRET_KEY: [any string of characters. the longer the better]
+## Bugs and fixes
 
-The project already contains a ```.gitignore``` file which contains env.py
-9. Run the project ```python app.py```
-
+- I had issues with smaller devices that i fixed using media queries
+- When searching for words I encountered and error that the search was case sensitive so I modified mycode 
+for it work regarding if the user use capital letters or not.  
 
 ## Credits
 
