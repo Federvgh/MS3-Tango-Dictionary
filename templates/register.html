@@ -7,7 +7,7 @@
       <form class="col s12" method="POST" action="{{ url_for('register') }}">
           <div class="row">
               <!-- username -->
-              <div class="input-field col s12 m4 offset-m4">
+              <div class="input-field col s12">
                   <input id="username" name="username" type="text" pattern="^[a-zA-Z0-9]{5,15}$" class="validate"
                       minlength="5" required>
                   <label for="username">Username</label>
@@ -15,7 +15,7 @@
           </div>
           <div class="row">
               <!-- Password -->
-              <div class="input-field col s12 m4 offset-m4">
+              <div class="input-field col s12">
                   <input id="password" name="password" type="password" class="validate" minlength="5" required>
                   <label for="password">Password</label>
               </div>
@@ -23,7 +23,7 @@
 
           <!-- register -->
           <div class="row">
-              <button type="submit" class="col s12 m4 offset-m4 btn-large">
+              <button type="submit" class="col s12 btn-large">
                   Register
               </button>
           </div>
