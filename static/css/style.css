@@ -74,6 +74,16 @@ background-color: rgb(105, 3, 3);
   
 }
 
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) {
+   
+}
 
-
-
+@media only screen and (max-width: 600px) {
+  .row .col.s6  {
+    width: auto;
+    margin-left: 37px
+  }
+}
