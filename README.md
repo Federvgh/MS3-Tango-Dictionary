@@ -4,6 +4,8 @@ and give some examples with songs to better understand it.
 
 ![Am I responsive image](static/images/responsive.jpg "Responsive design for Tango Dictionary")
 
+Live Demo [here](http://ms3-tango-dictionary.herokuapp.com/about).
+
 # Table of Contents
 
 - [MS3-Tango-dictionary](#MS3-Tango-dictionary)
@@ -18,9 +20,9 @@ and give some examples with songs to better understand it.
 * [Register](#register)
 * [Log In](#log-in)
 * [Search](#search)
+* [CRUD](#CRUD)
 
-- [CRUD Functionality](#crud---create--read--update-and-delete)
-##UX
+## UX
 
 ## General
 The landing page of the website is the About page, this was done with the idea that people can read what the website is about
@@ -310,7 +312,6 @@ and click on the green button to open the menu
 - MONGO_DBNAME: [name of your database]
 - MONGO_URI: ```mongodb://:@ds225442.mlab.com:25442/```
 - SECRET_KEY: [any string of characters. the longer the better]
-
 
 11. Now go back to the "Deploy" tab and click on "Deploy Branch"
 
