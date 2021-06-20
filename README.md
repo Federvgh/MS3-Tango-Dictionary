@@ -128,7 +128,7 @@ On the dictionary page, users ot visitors can search for specific words located 
 
 # CRUD
 
-As part of the milestone project this application can perform CRUD operations.
+As part of the milestone project this application can perform CRUD operations (Create, read, update, delete).
 
 ## Create
 
@@ -320,8 +320,8 @@ and click on the green button to open the menu
 ## Bugs and fixes
 
 - I had issues with smaller devices that i fixed using media queries
-- When searching for words I encountered and error that the search was case sensitive so I modified mycode 
-for it work regarding if the user use capital letters or not.  
+- When searching for words I encountered and error that the search was case sensitive so I modified my code 
+for it to work, regardless if the user uses capital letters or not.  
 
 ## Credits
 
