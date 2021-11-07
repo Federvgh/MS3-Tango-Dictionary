@@ -316,11 +316,15 @@ and click on the green button to open the menu
 
 12. The website should be deployed on ```https://[your_app_name].herokuapp.com/```
 
+
+
 ## Bugs and fixes
 
 - I had issues with smaller devices that i fixed using media queries
 - When searching for words I encountered and error that the search was case sensitive so I modified my code 
 for it to work, regardless if the user uses capital letters or not.  
+- The letters in the dictionary were not displaying properly I added some margins to give them some space between them.
+- There were some extra divs showing for the letters that did not have any words added to them, this was because they were outside of the statement.
 
 ## Credits
 
