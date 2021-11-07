@@ -324,7 +324,7 @@ and click on the green button to open the menu
 - When searching for words I encountered and error that the search was case sensitive so I modified my code 
 for it to work, regardless if the user uses capital letters or not.  
 - The letters in the dictionary were not displaying properly I added some margins to give them some space between them.
-- There were some extra divs showing for the letters that did not have any words added to them, this was because they were outside of the statement.
+- There were some extra divs showing as error on html validator for the letters that did not have any words added to them, this was because they were outside of the statement.
 
 ## Credits
 
